@@ -69,11 +69,11 @@ class Caterer:
     #Display Caterer Details
     def displayCaterer(self):
         print("Caterer Details:")
-        print("ID:", self.__caterer_id, " - Name:", self.__caterer_name)
-        print("Address:", self.__caterer_address, " - Contact Information:", self.__caterer_contact)
-        print("Menu", self.__menu)
-        print("Minimum number of guests:", self.__min_guests)
-        print("Maximum number of guests:", self.__max_guests)
+        print("ID: ", self.__caterer_id, " - Name:", self.__caterer_name)
+        print("Address: ", self.__caterer_address, " - Contact Information:", self.__caterer_contact)
+        print("Menu: ", self.__menu)
+        print("Minimum number of guests: ", self.__min_guests)
+        print("Maximum number of guests: ", self.__max_guests)
 
 
 class Supplier:
@@ -115,8 +115,8 @@ class Supplier:
 
     #Display Supplier Details
     def displaySupplier(self):
-        print("ID:", self.__id, "Name:", self.__name)
-        print("Address:", self.__address, "Contact Details: ", self.__contact_details)
+        print("ID:", self.__id, " - Name:", self.__name)
+        print("Address:", self.__address, " - Contact Details: ", self.__contact_details)
         print("Service: ", self.__service)
 
 #Parent Class
@@ -185,7 +185,7 @@ class Employee:
         print("Name:", self._employee_name, " - ID:", self._employee_id)
         print("Department:", self._department, " - Job Title:", self._job_title)
         print("Basic Salary:", self._basic_salary)
-        print("Age:", self._age, "Date Of Birth:", self._dateOfBirth)
+        print("Age:", self._age, " - Date Of Birth:", self._dateOfBirth)
         print("Passport Details:", self._passport_details)
 
 #Child class
@@ -212,7 +212,7 @@ class Designer(Employee):
 
     #Display Designer Class
     def displayDesigner(self):
-        print("Designer Information:")
+        print("Designer:")
         Employee.displayEmployee(self)
         print("Design Specialization:", self.__design_specialization)
         print("Qualifications:", self.__qualifications)
