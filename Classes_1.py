@@ -11,7 +11,7 @@ class EventType(Enum):
 class Event:
     """Class to represent an Event"""
     # Using initializing constructor to initialize attributes of Event class
-    def __init__(self, event, event_id, event_type, theme, date, time, duration, venue_address, client_id, guest_list, catering_comp, cleaning_comp,decorations_comp, entertainment_comp, furniture_comp, invoice, venue):
+    def __init__(self, event, event_id, event_type, theme, date, time, duration, venue_address, client_id, guest_list, catering_comp, cleaning_comp,decorations_comp, entertainment_comp, furniture_comp, invoice):
         #Initializing attributes
         self.__event = event
         self.__event_id = event_id
@@ -30,7 +30,7 @@ class Event:
         self.__furniture_comp = furniture_comp
         self.__invoice = invoice
         #This represents aggregation between Venue and Event classes
-        self.__venue = venue #aggregation
+        self.__venue = None #aggregation
 
     #defining a function to assign a venue for an event
     def assign_venue(self, venue):
@@ -133,11 +133,6 @@ class Event:
         self.__invoice = invoice
     def get_invoice(self):
         return self.__invoice
-
-    def set_venue(self, venue):
-        self.__venue = venue
-    def get_venue(self):
-        return self.__venue
 
     #Display Event Details
     def displayEvent(self):
