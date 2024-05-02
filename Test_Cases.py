@@ -9,7 +9,7 @@ from Pickle import ManageEvents
 try:
     #Creating Objects
     #Creating event1 as an object for Event class
-    event1 = Event("Graduation Party", "E3692", EventType.Graduation, "Star Theme", "11/05/2024", "16:00", "3 hours", "Park Hyatt Dubai Venue", "A5976", [], "Graduation Catering", "G EVENT Cleaning", "ABC Decorations", "Entertainment Corp.", "Furniture Supply Corp.", 1000.0, None)
+    event1 = Event("Graduation Party", "E3692", EventType.Graduation, "Star Theme", "11/05/2024", "16:00", "3 hours", "Park Hyatt Dubai Venue", "A5976", [], "Graduation Catering", "G EVENT Cleaning", "ABC Decorations", "Entertainment Corp.", "Furniture Supply Corp.", 1000.0)
     #Creating client1 as an object for Client class
     client1 = Client("A5976", "Maryam", "Jumeira", "Maryam@gmail.com", 2500.0)
 
